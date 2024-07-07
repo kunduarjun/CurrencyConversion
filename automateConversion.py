@@ -3,6 +3,8 @@
 # crontab -e: This command opens the crontab in the default editor. 
 # Crontab content to automate this script to run every day at 12:30 PM below:
 # '30 12 * * * /usr/local/bin/python3 /Users/kunduarjun02/Desktop/VSCode/CurrencyConversion/automateConversion.py'
+# Use the command 'which -a python3' in the terminal to locate the available paths to python3.
+# Use the absolute path to your automateConversion.py file.
 # Vi commands: 'i' key to enter Insert mode, 'esc' tab to exit Insert mode, ':wq!' keys to exit Vi and save changes.
 
 from dotenv import load_dotenv
@@ -28,7 +30,11 @@ cad_value_for_euro = data_for_eur['conversion_rates']['CAD']
 
 current_date = datetime.now().date()
 
+# Replace with your absolute path to the trackingExchangeRate.txt file. 
 with open('/Users/kunduarjun02/Desktop/VSCode/CurrencyConversion/trackingExchangeRate.txt', 'a') as output_file:
     output_file.write(f'{current_date}: 1 CAD = {euro_value_for_cad} EUR, 1 EUR = {cad_value_for_euro} CAD.\n')
 
 pync.notify(message = 'Open trackingExchangeRate.txt', title = "Check Exchange Rate", timeout = 10)
+
+# Will uncomment this out once plottingExchangeRate.py is complete. 
+# os.system('/usr/local/bin/python3 /Users/kunduarjun02/Desktop/VSCode/CurrencyConversion/plottingExchangeRate.py')

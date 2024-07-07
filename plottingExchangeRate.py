@@ -55,4 +55,7 @@ data_points_to_view = int(data_points_to_view)
 if data_points_to_view > total_values:
     data_points_to_view = total_values
 
-
+# Filter the above lists down.
+dates_to_map = dates[-data_points_to_view:]
+CAD_to_EUR_to_map = CAD_to_EUR[-data_points_to_view:]
+EUR_to_CAD_to_map = EUR_to_CAD[-data_points_to_view:]

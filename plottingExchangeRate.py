@@ -63,7 +63,7 @@ EUR_to_CAD_to_map = EUR_to_CAD[-data_points_to_view:]
 plt.plot(dates_to_map, CAD_to_EUR_to_map, label='1 CAD equals this many EUR')
 # plt.plot(dates_to_map, EUR_to_CAD_to_map, label='1 EUR equals this many CAD')
 plt.xlabel('Date')
-plt.xticks(rotation = 45)
+plt.xticks(rotation = 55)
 plt.ylabel('Exchange Rates')
 plt.title('Time Lapse for CAD and EUR Exchange Rates')
 plt.legend()

@@ -41,7 +41,7 @@ with open('/Users/kunduarjun02/Desktop/VSCode/CurrencyConversion/trackingExchang
 
 
 # First of all, we need to ask the user how many of the latest values they want to see graphed. 
-data_points_to_view = input('Enter in the number of values from the most recent date you want to see: ')
+data_points_to_view = input(f'Enter in the number of values from the most recent date you want to see (There are {total_values} total data points available): ')
 
 # This input needs to be a digit.
 while not data_points_to_view.isdigit():

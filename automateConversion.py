@@ -5,7 +5,7 @@
 # '30 12 * * * /usr/local/bin/python3 /Users/kunduarjun02/Desktop/VSCode/CurrencyConversion/automateConversion.py'
 # Use the command 'which -a python3' in the terminal to locate the available paths to python3.
 # Use the absolute path to your automateConversion.py file.
-# Vi commands: 'i' key to enter Insert mode, 'esc' tab to exit Insert mode, ':wq!' keys to exit Vi and save changes.
+# Vi commands: 'i' key to enter Insert mode, 'esc' tab to exit Insert mode, ':wq!' keys to exit Vi and save changes (You need to be outside of Insert mode to exit Vi).
 
 from dotenv import load_dotenv
 import os

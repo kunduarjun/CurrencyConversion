@@ -36,5 +36,4 @@ with open('/Users/kunduarjun02/Desktop/VSCode/CurrencyConversion/trackingExchang
 
 pync.notify(message = 'Open trackingExchangeRate.txt', title = "Check Exchange Rate", timeout = 10)
 
-# Will uncomment this out once plottingExchangeRate.py is complete. 
-# os.system('/usr/local/bin/python3 /Users/kunduarjun02/Desktop/VSCode/CurrencyConversion/plottingExchangeRate.py')
+os.system('/usr/local/bin/python3 /Users/kunduarjun02/Desktop/VSCode/CurrencyConversion/plottingExchangeRate.py')

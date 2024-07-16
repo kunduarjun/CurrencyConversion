@@ -12,4 +12,4 @@ Ex: API_KEY = {Enter your API key as a string here}
 
 Output is written to file named 'trackingExchangeRate.txt' within the same directory as the program. 
 
-Some graphing functionality is currently in the works. 
+Run the 'plottingExchangeRate.py' file to view a graphical representation of the exchange rate data. 

@@ -60,12 +60,24 @@ dates_to_map = dates[-data_points_to_view:]
 CAD_to_EUR_to_map = CAD_to_EUR[-data_points_to_view:]
 EUR_to_CAD_to_map = EUR_to_CAD[-data_points_to_view:]
 
+plt.figure(1)
 plt.plot(dates_to_map, CAD_to_EUR_to_map, label='1 CAD equals this many EUR')
-# plt.plot(dates_to_map, EUR_to_CAD_to_map, label='1 EUR equals this many CAD')
 plt.xlabel('Date')
 plt.xticks(rotation = 55)
 plt.ylabel('Exchange Rates')
 plt.title('Time Lapse for CAD and EUR Exchange Rates')
 plt.legend()
 plt.tight_layout()
+
+plt.figure(2)
+plt.plot(dates_to_map, EUR_to_CAD_to_map, label='1 EUR equals this many CAD')
+plt.xlabel('Date')
+plt.xticks(rotation = 55)
+plt.ylabel('Exchange Rates')
+plt.title('Time Lapse for CAD and EUR Exchange Rates')
+plt.legend()
+plt.tight_layout()
+
+# Currently, one graph opens on top of the other.
+# To resolve this, drag the top graph over to the side; This will allow you to view both graphs side-by-side.
 plt.show()
